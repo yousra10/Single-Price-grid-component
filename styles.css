@@ -1,0 +1,142 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Karla', sans-serif;
+  background-position: left top, bottom right;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: hsl(204, 43%, 93%);
+}
+
+h1 {
+  color: hsl(179, 62%, 43%);
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+h2 {
+  margin-top: 0;
+  color: hsl(71, 73%, 54%);
+  font-size: 1rem;
+}
+
+h3 {
+  color: hsl(204, 43%, 93%);
+}
+
+p {
+  color: hsl(218, 22%, 67%);
+  margin: 0;
+  font-weight: 200;
+  font-size: .75rem;
+  line-height: 1.7;
+}
+
+.grid {
+  width: 60%;
+  margin: 3rem auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  border-radius: 10px;
+}
+
+.one {
+  grid-column-start: 0;
+  grid-column-end: span 3;
+  padding: 2rem 4rem 0 2rem;
+  background-color: white;
+  border-radius: 10px 10px 0 0;
+}
+
+.two {
+  background-color: hsl(179, 62%, 43%);
+  grid-row-start: 2;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 1;
+  padding: 2rem;
+  border-radius: 0 0 0 10px;
+}
+
+.three {
+  background-color: hsl(179, 62%, 49%);
+  grid-column-start: 2;
+  grid-column-end: 2;
+  padding: 2rem 6rem 2rem 2rem;
+  border-radius: 0 0 10px 0;
+}
+
+.btn {
+  width: 95%;
+  height: 2.7rem;
+  background-color: hsl(71, 73%, 54%);
+  border-radius: 10px;
+  border: solid 1px hsl(71, 73%, 54%);
+  color: white;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.description {
+  color: white;
+  font-weight: 200;
+}
+
+.deux {
+  font-weight: 100;
+  font-size: .75rem;
+  line-height: 1.7;
+}
+
+.price {
+  font-size: 1.9rem;
+}
+
+.italic {
+  font-weight: lighter;
+  letter-spacing: .12rem;
+  font-size: 0.7rem;
+  color: hsl(204, 43%, 93%);
+}
+
+/****************for mobile*************/
+@media (max-width:853px) {
+  .grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    border-radius: 10px;
+  }
+
+  .one {
+    grid-column-start: 0;
+    grid-column-end: 0;
+    padding: 2rem 2rem 0 2rem;
+    background-color: white;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .two {
+    background-color: hsl(179, 62%, 43%);
+    grid-row-start: 2;
+    grid-column-end: span 2;
+    padding: 2rem;
+    border-radius: 0;
+  }
+
+  .three {
+    background-color: hsl(179, 62%, 49%);
+    padding: 2rem;
+    border-radius: 0 0 10px 10px;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
